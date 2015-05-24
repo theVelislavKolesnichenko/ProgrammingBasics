@@ -1,0 +1,2 @@
+# ProgrammingBasics
+Target "Programming Basics" is to demonstrate the basic programming constructs required for all committed to dealing with programming. This includes writing code at a basic level (basic coding skills), working with development environment (IDE), using variables and data, operators and expressions, work with the console (read input data and print results), using conditional statements (if, if-else, switch-case) and loops (for, while, do-while, for-each). For examples using the programming language C # and Visual Studio in a Windows environment.
