@@ -10,10 +10,17 @@ namespace Age_After_10_Years
     {
         static void Main(string[] args)
         {
+            bool successful = false;
+            DateTime birthday;
+
+            do{
+                Console.Clear();
+                Console.Write("Enter your birthday: ");
+                successful = DateTime.TryParse(Console.ReadLine(), out birthday);
+            }
+            while (!successful);
+
             DateTime currentDate = DateTime.Now;
-            Console.Write("Enter your birthday: ");
-            DateTime birthday = DateTime.Parse(Console.ReadLine());
-            
             int nowAge = currentDate.Year - birthday.Year;
             int after10Years = nowAge + 10;
 

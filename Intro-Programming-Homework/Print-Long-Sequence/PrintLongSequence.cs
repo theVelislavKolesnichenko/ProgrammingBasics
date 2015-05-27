@@ -12,20 +12,10 @@ namespace Print_Long_Sequence
         {
             int count = 1000;
             int start = 2;
-            int number = 0;
 
-            for (int i = 0; i < count; i++)
+            for (int i = start; i <= count; i = i + 2)
             {
-                number = start + i;
-
-                if (number % 2 != 0)
-                {
-                    Console.Write("{0}, ", -number);
-                }
-                else
-                {
-                    Console.Write("{0}, ", number);
-                }
+                Console.Write("{0}, {1}, ", i, (i + 1) * (-1));
             }
             Console.WriteLine();
         }
